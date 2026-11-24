@@ -122,7 +122,9 @@ def run(argv=None) -> int:
 
     # Gmail drafts (optional). Never sends.
     addr, pw = os.environ.get("GMAIL_ADDRESS"), os.environ.get("GMAIL_APP_PASSWORD")
-    if addr and pw:
+    if addr and pw and args.sample:
+        log("Sample run: skipping Gmail drafts (sample posts are made up).")
+    elif addr and pw:
         from .gmail_drafts import GmailDrafts, build_message
         to_draft = [it for it in items if it["outreach"] and it["verdict"].get("contact_email")]
         msgs = [build_message(addr, it["verdict"]["contact_email"], it["outreach"]["email_subject"],
@@ -138,7 +140,11 @@ def run(argv=None) -> int:
     run_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     DATA.mkdir(exist_ok=True)
     latest = DATA / "latest_digest.md"
-    if items:
+    if items and args.sample:
+        digest = render_digest(items, run_at)
+        latest.write_text("> ⚠️ **Test run on made-up sample posts.** These companies are not real. "
+                          "Nothing was saved to Gmail.\n\n" + digest)
+    elif items:
         digest = render_digest(items, run_at)
         day = DATA / "digests" / f"{run_at[:10]}.md"
         day.parent.mkdir(exist_ok=True)

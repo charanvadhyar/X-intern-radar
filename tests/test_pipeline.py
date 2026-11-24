@@ -81,8 +81,9 @@ def test_end_to_end_with_fake_claude(tmp_path, monkeypatch):
     digest = (tmp_path / "latest_digest.md").read_text()
     assert "TinyInfer" in digest and "Founding intern" in digest
     assert "9999" not in digest  # ids Claude invents are dropped
-    lines = (tmp_path / "opportunities.jsonl").read_text().splitlines()
-    assert len(lines) == 2
+    assert "made-up sample posts" in digest
+    # sample runs never touch the real history the dashboard reads
+    assert not (tmp_path / "opportunities.jsonl").exists()
     # one classify call + two draft calls
     assert len(fake.calls) == 3
     # second run: everything already seen, no Claude calls

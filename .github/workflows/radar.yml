@@ -58,4 +58,5 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           COUNT=$(grep -c '^### ' data/latest_digest.md || true)
-          gh issue create --title "🎯 ${COUNT} new opportunities ($(date -u +%b\ %d,\ %H:%M) UTC)" --body-file data/latest_digest.md
+          PREFIX=""; [ "${{ inputs.sample }}" = "true" ] && PREFIX="[TEST, not real] "
+          gh issue create --title "${PREFIX}🎯 ${COUNT} new opportunities ($(date -u +%b\ %d,\ %H:%M) UTC)" --body-file data/latest_digest.md
