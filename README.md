@@ -42,3 +42,11 @@ pip install -r requirements.txt
 python -m pytest -q                                     # offline tests
 ANTHROPIC_API_KEY=... python -m radar.main --sample tests/sample_posts.json --state /tmp/s.json
 ```
+
+## Dashboard (GitHub Pages)
+
+`docs/index.html` is a small dashboard that lists every opportunity. Each one has copy buttons for the email and DM, plus "applied" and "skipped" tracking that's saved in your browser.
+
+The page itself holds no data. When you open it, you paste a **fine-grained GitHub token** that can only read this repo's contents. The token stays in your browser and is used to load `data/opportunities.jsonl` straight from the private repo, so anyone else who opens the link only sees the token prompt.
+
+To enable it: go to **Settings → Pages**, set Source to "Deploy from a branch", pick `main` and `/docs`. On the free plan, Pages needs a public repo. GitHub Pro (free with the Student Developer Pack) allows Pages on a private repo.

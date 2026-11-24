@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Intern Radar</title>
+<style>
+:root{
+  --bg:#f6f7f9;--card:#fff;--text:#14171c;--muted:#5d6673;--line:#e3e6ea;
+  --accent:#2f6fed;--accent-soft:#e8effd;--good:#1d8a4e;--good-soft:#e3f4ea;
+  --warn:#a15c00;--warn-soft:#fbefdc;--skip:#8a919b;--code:#f1f3f5;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1115;--card:#171a20;--text:#e8eaed;--muted:#9aa3ae;--line:#272b33;
+  --accent:#6d9bff;--accent-soft:#1c2740;--good:#4cc283;--good-soft:#16291f;
+  --warn:#f0a44a;--warn-soft:#2e2414;--skip:#6b727c;--code:#1f232a;}}
+:root[data-theme="dark"]{
+  --bg:#0f1115;--card:#171a20;--text:#e8eaed;--muted:#9aa3ae;--line:#272b33;
+  --accent:#6d9bff;--accent-soft:#1c2740;--good:#4cc283;--good-soft:#16291f;
+  --warn:#f0a44a;--warn-soft:#2e2414;--skip:#6b727c;--code:#1f232a;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:24px 16px 64px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+h1{font-size:22px;margin:0;letter-spacing:-.01em}
+h1 span{color:var(--accent)}
+.sub{color:var(--muted);font-size:13px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.stat b{display:block;font-size:20px}
+.stat small{color:var(--muted)}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.bar input,.bar select{flex:1;min-width:140px;padding:9px 11px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--text);font:inherit}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.tab{border:1px solid var(--line);background:var(--card);color:var(--muted);padding:5px 12px;border-radius:999px;cursor:pointer;font:inherit;font-size:13px}
+.tab.on{background:var(--accent-soft);color:var(--accent);border-color:transparent;font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:12px}
+.card.applied{border-left:4px solid var(--good)}
+.card.skipped{opacity:.55}
+.top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.title{font-weight:650;font-size:16px}
+.meta{color:var(--muted);font-size:13px;margin-top:2px}
+.fit{flex:none;font-weight:700;font-size:13px;padding:3px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.fit.hi{background:var(--good-soft);color:var(--good)}
+.fit.mid{background:var(--warn-soft);color:var(--warn)}
+.why{margin:8px 0 10px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.chip{font-size:12px;padding:2px 8px;border-radius:6px;background:var(--code);color:var(--muted);text-decoration:none}
+a.chip{color:var(--accent)}
+details{border-top:1px solid var(--line);padding-top:8px;margin-top:8px}
+summary{cursor:pointer;color:var(--accent);font-size:14px;font-weight:600}
+pre{white-space:pre-wrap;word-break:break-word;background:var(--code);padding:12px;border-radius:8px;font:13px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;margin:8px 0}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+button.b{border:1px solid var(--line);background:var(--card);color:var(--text);padding:7px 12px;border-radius:8px;cursor:pointer;font:inherit;font-size:13px}
+button.b:hover{border-color:var(--accent)}
+button.p{background:var(--accent);color:#fff;border-color:var(--accent)}
+.empty,.gate{text-align:center;color:var(--muted);padding:40px 16px}
+.gate{background:var(--card);border:1px solid var(--line);border-radius:12px;text-align:left;padding:20px}
+.gate h2{margin:0 0 6px;font-size:18px;color:var(--text)}
+.gate ol{padding-left:20px}
+.gate input{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text);font:inherit;margin:8px 0}
+.err{color:#d64545;font-size:13px}
+.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--text);color:var(--bg);padding:8px 14px;border-radius:8px;font-size:13px;opacity:0;transition:.2s;pointer-events:none}
+.toast.on{opacity:1}
+@media (max-width:560px){.stats{grid-template-columns:repeat(2,1fr)}.top{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Intern <span>Radar</span></h1>
+      <div class="sub" id="sub">Startup internships found on X, with drafts ready to send</div>
+    </div>
+    <div class="row" style="margin:0">
+      <button class="b" id="refresh" title="Reload data">↻ Refresh</button>
+      <button class="b" id="logout" hidden>Forget token</button>
+    </div>
+  </header>
+  <main id="app"></main>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+// ---- Settings: where the data lives ---------------------------------------
+const REPO = "charanvadhyar/X-intern-radar";   // private repo holding data/
+const DATA_PATH = "data/opportunities.jsonl";
+const PUBLIC_DATA = "data.json";                // optional, same folder as this page
+// ---------------------------------------------------------------------------
+
+const $ = s => document.querySelector(s);
+const store = {
+  get(k, d){ try{ const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v);}catch{ return d; } },
+  set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch{} },
+  del(k){ try{ localStorage.removeItem(k); }catch{} }
+};
+let items = [], filter = "new", query = "", sort = "newest";
+const status = store.get("radar.status", {});
+
+function toast(msg){ const t = $("#toast"); t.textContent = msg; t.classList.add("on"); setTimeout(()=>t.classList.remove("on"), 1600); }
+function esc(s){ return String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+function safeUrl(u){ try{ const x = new URL(u); return /^https?:$/.test(x.protocol) ? x.href : null; }catch{ return null; } }
+
+function parseJsonl(text){
+  return text.split("\n").filter(l => l.trim()).map(l => { try{ return JSON.parse(l); }catch{ return null; } }).filter(Boolean);
+}
+
+async function loadPublic(){
+  try{
+    const r = await fetch(PUBLIC_DATA, {cache:"no-store"});
+    if(!r.ok) return null;
+    const j = await r.json();
+    return Array.isArray(j) ? j : null;
+  }catch{ return null; }
+}
+
+async function loadPrivate(token){
+  const r = await fetch(`https://api.github.com/repos/${REPO}/contents/${DATA_PATH}`, {
+    headers: { "Authorization": `Bearer ${token}`, "Accept": "application/vnd.github.raw+json" }, cache: "no-store"
+  });
+  if(r.status === 404) return [];             // no opportunities file yet
+  if(r.status === 401 || r.status === 403) throw new Error("GitHub refused this token. Check it has read access to the repo's contents.");
+  if(!r.ok) throw new Error(`GitHub returned ${r.status}.`);
+  return parseJsonl(await r.text());
+}
+
+async function load(){
+  $("#app").innerHTML = '<div class="empty">Loading…</div>';
+  const pub = await loadPublic();
+  if(pub){ items = pub; $("#logout").hidden = true; return render(); }
+  const token = store.get("radar.token", "");
+  if(!token) return gate();
+  try{
+    items = await loadPrivate(token);
+    $("#logout").hidden = false;
+    render();
+  }catch(e){ gate(e.message); }
+}
+
+function gate(err){
+  $("#logout").hidden = true;
+  $("#app").innerHTML = `
+    <div class="gate">
+      <h2>Connect your private data</h2>
+      <p class="sub">This page is public, but your opportunities and drafts stay in your private repo. Paste a read-only GitHub token once and it's kept only in this browser.</p>
+      <ol class="sub">
+        <li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub → Fine-grained tokens → Generate new token</a>.</li>
+        <li>Repository access: <b>Only select repositories</b> → <code>${esc(REPO.split("/")[1])}</code>.</li>
+        <li>Permissions: <b>Contents → Read-only</b>. Nothing else.</li>
+      </ol>
+      <input id="tok" type="password" placeholder="github_pat_…" autocomplete="off">
+      ${err ? `<div class="err">${esc(err)}</div>` : ""}
+      <div class="row"><button class="b p" id="save">Load my opportunities</button></div>
+    </div>`;
+  $("#save").onclick = () => { const v = $("#tok").value.trim(); if(!v) return; store.set("radar.token", v); load(); };
+  $("#tok").onkeydown = e => { if(e.key === "Enter") $("#save").click(); };
+}
+
+function keyOf(it){ return it.post?.id || it.post?.link || JSON.stringify(it).slice(0,80); }
+function stateOf(it){ return status[keyOf(it)] || "new"; }
+function setState(it, s){ const k = keyOf(it); if(s === "new") delete status[k]; else status[k] = s; store.set("radar.status", status); render(); }
+
+function render(){
+  // newest record per post wins
+  const byKey = new Map(); items.forEach(it => byKey.set(keyOf(it), it));
+  const all = [...byKey.values()];
+  const counts = {new:0, applied:0, skipped:0};
+  all.forEach(it => counts[stateOf(it)]++);
+  const week = Date.now() - 7*864e5;
+  const recent = all.filter(it => Date.parse((it.found_at||"").replace(" UTC","Z").replace(" ","T")) > week).length;
+
+  let list = all.filter(it => filter === "all" || stateOf(it) === filter);
+  if(query){
+    const q = query.toLowerCase();
+    list = list.filter(it => JSON.stringify([it.verdict, it.post?.text, it.post?.author_username]).toLowerCase().includes(q));
+  }
+  list.sort((a,b) => sort === "fit"
+    ? (b.verdict?.relevance||0) - (a.verdict?.relevance||0)
+    : String(b.found_at||"").localeCompare(String(a.found_at||"")));
+
+  $("#app").innerHTML = `
+    <div class="stats">
+      <div class="stat"><b>${all.length}</b><small>Found</small></div>
+      <div class="stat"><b>${recent}</b><small>This week</small></div>
+      <div class="stat"><b>${counts.new}</b><small>To review</small></div>
+      <div class="stat"><b>${counts.applied}</b><small>Applied</small></div>
+    </div>
+    <div class="bar">
+      <input id="q" placeholder="Search company, role, skill…" value="${esc(query)}">
+      <select id="sort">
+        <option value="newest"${sort==="newest"?" selected":""}>Newest first</option>
+        <option value="fit"${sort==="fit"?" selected":""}>Best fit first</option>
+      </select>
+    </div>
+    <div class="tabs">
+      ${[["new","To review"],["applied","Applied"],["skipped","Skipped"],["all","All"]].map(([k,l]) =>
+        `<button class="tab${filter===k?" on":""}" data-f="${k}">${l}${k!=="all"?` · ${counts[k]}`:""}</button>`).join("")}
+    </div>
+    <div id="list">${list.length ? list.map(card).join("") : `<div class="empty">${all.length ? "Nothing here." : "No opportunities yet. The radar checks X every 6 hours."}</div>`}</div>`;
+
+  $("#q").oninput = e => { query = e.target.value; const pos = e.target.selectionStart; render(); const q = $("#q"); q.focus(); q.setSelectionRange(pos,pos); };
+  $("#sort").onchange = e => { sort = e.target.value; render(); };
+  document.querySelectorAll(".tab").forEach(b => b.onclick = () => { filter = b.dataset.f; render(); });
+  document.querySelectorAll("[data-act]").forEach(b => b.onclick = () => act(b.dataset.act, list[+b.dataset.i]));
+}
+
+function card(it, i){
+  const v = it.verdict || {}, p = it.post || {}, o = it.outreach || {};
+  const st = stateOf(it), fit = v.relevance ?? 0;
+  const title = [v.company, v.role].filter(Boolean).join(" · ") || "Opportunity";
+  const link = safeUrl(p.link), apply = safeUrl(v.apply_link);
+  const contact = v.contact_email ? `✉ ${esc(v.contact_email)}` : v.contact_method === "dm" ? "DM on X" : esc(v.contact_method || "");
+  return `
+  <article class="card ${st}">
+    <div class="top">
+      <div>
+        <div class="title">${esc(title)}</div>
+        <div class="meta">@${esc(p.author_username)} · ${esc((it.found_at||"").slice(0,16))}${v.location ? " · " + esc(v.location) : ""}</div>
+      </div>
+      <span class="fit ${fit>=8?"hi":fit>=6?"mid":""}">Fit ${fit}/10</span>
+    </div>
+    <div class="why">${esc(v.reason)}</div>
+    <div class="chips">
+      ${link ? `<a class="chip" href="${esc(link)}" target="_blank" rel="noopener">View post ↗</a>` : ""}
+      ${apply ? `<a class="chip" href="${esc(apply)}" target="_blank" rel="noopener">Apply link ↗</a>` : ""}
+      ${contact ? `<span class="chip">${contact}</span>` : ""}
+      ${v.kind ? `<span class="chip">${esc(v.kind.replace("_"," "))}</span>` : ""}
+      ${it.gmail_draft ? `<span class="chip">In Gmail drafts</span>` : ""}
+    </div>
+    <details><summary>Original post</summary><pre>${esc(p.text)}</pre></details>
+    ${o.email_body ? `
+    <details${st==="new"?" open":""}><summary>Drafts</summary>
+      <div class="sub">Subject: <b>${esc(o.email_subject)}</b></div>
+      <pre>${esc(o.email_body)}</pre>
+      <div class="row">
+        <button class="b" data-act="copy-email" data-i="${i}">Copy email</button>
+        ${v.contact_email ? `<button class="b" data-act="mail" data-i="${i}">Open in mail app</button>` : ""}
+      </div>
+      <pre>${esc(o.dm_text)}</pre>
+      <div class="row"><button class="b" data-act="copy-dm" data-i="${i}">Copy DM</button></div>
+    </details>` : ""}
+    <div class="row">
+      ${st!=="applied" ? `<button class="b p" data-act="applied" data-i="${i}">Mark applied</button>` : ""}
+      ${st!=="skipped" ? `<button class="b" data-act="skipped" data-i="${i}">Skip</button>` : ""}
+      ${st!=="new" ? `<button class="b" data-act="new" data-i="${i}">Move back to review</button>` : ""}
+    </div>
+  </article>`;
+}
+
+async function copy(text, label){
+  try{ await navigator.clipboard.writeText(text); toast(`${label} copied`); }
+  catch{ toast("Couldn't copy. Select the text instead."); }
+}
+
+function act(a, it){
+  const o = it.outreach || {}, v = it.verdict || {};
+  if(a === "copy-email") return copy(`Subject: ${o.email_subject}\n\n${o.email_body}`, "Email");
+  if(a === "copy-dm") return copy(o.dm_text, "DM");
+  if(a === "mail") { location.href = `mailto:${encodeURIComponent(v.contact_email)}?subject=${encodeURIComponent(o.email_subject)}&body=${encodeURIComponent(o.email_body)}`; return; }
+  setState(it, a);
+}
+
+$("#refresh").onclick = load;
+$("#logout").onclick = () => { store.del("radar.token"); items = []; gate(); };
+load();
+</script>
+</body>
