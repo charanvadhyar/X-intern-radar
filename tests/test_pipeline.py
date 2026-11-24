@@ -67,6 +67,7 @@ def test_end_to_end_with_fake_claude(tmp_path, monkeypatch):
     fake = FakeMessages()
     monkeypatch.setattr(radar_main, "DATA", tmp_path)
     monkeypatch.delenv("GMAIL_ADDRESS", raising=False)
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "test")
     import radar.analyze as an
     orig_init = an.Analyzer.__init__
 

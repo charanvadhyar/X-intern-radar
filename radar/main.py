@@ -30,7 +30,9 @@ def load_config() -> dict:
 
 
 def fetch_posts(cfg: dict, state: State, log) -> list[Post]:
-    x = XClient(os.environ.get("X_BEARER_TOKEN", ""))
+    if not os.environ.get("X_BEARER_TOKEN"):
+        raise SystemExit("ERROR: X_BEARER_TOKEN is not set. Add it under Settings > Secrets and variables > Actions.")
+    x = XClient(os.environ["X_BEARER_TOKEN"])
     budget = int(cfg.get("monthly_post_budget", 4000))
     per_query = int(cfg.get("max_results_per_query", 20))
     out: list[Post] = []
@@ -97,6 +99,9 @@ def run(argv=None) -> int:
 
     items: list[dict] = []
     if posts and not args.no_claude:
+        if not (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN")):
+            log("ERROR: ANTHROPIC_API_KEY is not set. Add it under Settings > Secrets and variables > Actions.")
+            return 2
         from .analyze import Analyzer
         an = Analyzer(profile, model=cfg.get("model", "claude-opus-5-5"))
         size = int(cfg.get("classify_batch_size", 20))
