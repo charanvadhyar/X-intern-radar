@@ -1,24 +1,20 @@
-## Run 2026-11-24 10:36 UTC — 12 opportunities
+## Run 2026-11-24 22:31 UTC — 8 opportunities
 
-### ContexaAI · AI/Growth Engineering Intern  (fit 9/10)
-- Post: https://x.com/akshay_nocode/status/2125093059285361130 by @akshay_nocode
-- Why: The founder is directly hiring a remote AI engineering intern in Python, which fits the candidate's LLM and agent work.
-- Contact: link · Apply: https://docs.google.com/forms/d/e/1FAIpQLScDlLcM9FCfPkGUqCigtmOwiIUbQCjBRMq702UIqr_64phJ0w/viewform
+### Isomorph AI · Software Engineering Intern  (fit 8/10)
+- Post: https://x.com/offerscout/status/2125308386480951693 by @offerscout, posted 25 Nov, 00:49 IST
+- Why: Paid SWE internship at an AI agent startup in India, a strong technical fit.
+- Contact: link · Apply: https://www.linkedin.com/jobs/view/4494332025/
 
-**Email subject:** AI/Growth Engineering Intern: Python and LLM pipeline builder
+**Email subject:** SWE intern application: built a 7-agent LangGraph system
 
 ```
-Hi Akshay,
+Hi Isomorph AI team,
 
-I saw your post about the AI/Growth Engineering intern role at ContexaAI. Using LLMs to pull B2B buying signals out of web data is close to the kind of thing I've been building.
+I saw Offer Scout's post about your 6-month software engineering intern role working on AI agents, Python and cloud infrastructure, and wanted to reach out directly.
 
-Two projects are most relevant:
-- OpenResearch: a 7-agent LangGraph pipeline that takes a problem and a dataset through EDA, baselines and evaluation, then writes a paper draft. It's on PyPI (pip install autoresearch), and the launch post got 20K+ views on Reddit.
-- JanVaani: built in 48 hours on the Gemini API. It takes voice, photo or text reports in any Indian language, geotags them, deduplicates across languages and ranks them across 341 districts.
+The agent work is the closest match to what I've built. OpenResearch is an autonomous 7-agent ML research system in Python/LangGraph. It takes a problem and a dataset through EDA, baselines and an eval report to a paper draft. It's pip-installable and got 20K+ views on Reddit. On the infra side, I shipped JanVaani on GCP (Cloud Run, Firestore) in 48 hours. I also spent a year at Atmalogic building production ERP modules.
 
-In 2025 I also shipped CRM and billing modules for a production ERP.
-
-I'm applying through the form now. I'd be glad to do a quick chat if that's useful.
+I'm applying through the LinkedIn listing. Would you be open to a quick chat about the role?
 
 GitHub: github.com/charanvadhyar
 LinkedIn: linkedin.com/in/saicharanvadhyar
@@ -29,27 +25,24 @@ Sai
 **DM:**
 
 ```
-Hi Akshay, I saw the AI/Growth Eng intern post. I built OpenResearch (a 7-agent LangGraph pipeline, on PyPI) and JanVaani (Gemini-based multilingual reports with dedup and ranking across 341 districts). I'm applying via the form. Open to a quick chat? github.com/charanvadhyar
+Thanks for sharing the Isomorph AI SWE intern role. Agents + Python is right up my alley. I built OpenResearch, a 7-agent LangGraph research system (20K+ Reddit views). Any chance you know a direct contact on their team besides the LinkedIn link?
 ```
 
-### Grae AI · AI + Full Stack Intern (+PPO)  (fit 9/10)
-- Post: https://x.com/uchiha_Rockrz/status/2125064781845692623 by @uchiha_Rockrz
-- Why: Remote AI and full-stack internship in India with a strong stipend and a PPO.
-- Contact: hi@grae-ai.com
-- ✉️ Saved as a Gmail draft (review and send yourself)
+### Isomorph AI · Software Engineering Intern  (fit 8/10)
+- Post: https://x.com/foraiuse85334/status/2125304695447327071 by @foraiuse85334, posted 25 Nov, 00:35 IST
+- Why: Duplicate of the Isomorph AI SWE intern posting; candidate's 2028 batch is eligible.
+- Contact: link · Apply: https://www.linkedin.com/jobs/view/4494332025/
 
-**Email subject:** AI + Full Stack Intern: shipped ERP modules, LangGraph agents
+**Email subject:** Isomorph AI SWE intern: 2028 grad, quick question
 
 ```
-Hi Grae AI team,
+Hi Rahul,
 
-I saw Deepu's post on X about the AI + Full Stack Intern role and wanted to apply.
+Saw your post sharing the Isomorph AI Software Engineering Intern opening for 2027-2029 grads. I'm a 2028 M.Tech CSE (AI & ML) student at VIT Vellore and I'm applying through the LinkedIn link.
 
-Full stack: In 2025 I worked as a software developer at Atmalogic. I built modules of a headless ERP for gold manufacturing, covering manufacturing flow, HRM, CRM, inventory, billing and POS. The ERP was carried over as an asset when the client was acquired.
+Quick background: I spent 2025 as a software developer at Atmalogic. I built ERP modules (manufacturing flow, HRM, CRM, billing, POS) that were carried over as an asset when the client was acquired. On the side I built ColVec, a ColBERT-style vector DB in Rust with IVF + product quantization. A hand-written AVX2 kernel cut its query latency from 4036ms to 72ms.
 
-AI: I built OpenResearch, a 7-agent LangGraph system that takes a problem and dataset through EDA, baselines, evaluation and a paper draft. It's pip-installable and got 20K+ views on Reddit. I'm also doing multimodal LLM research at Algoverse, evaluating VLMs like Qwen2.5-VL.
-
-I'm doing my M.Tech in AI & ML at VIT and can work remotely. Could we set up a quick call, or should I send a resume?
+Do you know anyone on the Isomorph team, or have any details on what they're looking for? A pointer or referral would help a lot, but no pressure either way. Thanks for sharing it.
 
 GitHub: github.com/charanvadhyar
 LinkedIn: linkedin.com/in/saicharanvadhyar
@@ -60,28 +53,24 @@ Sai
 **DM:**
 
 ```
-Hi Deepu, saw your post about Grae AI's AI + Full Stack intern role. I built ERP modules at Atmalogic in 2025 and a 7-agent LangGraph research agent (OpenResearch). I'm emailing hi@grae-ai.com now. Anything I should mention? github.com/charanvadhyar
+Hey Rahul, saw your Isomorph AI SWE intern post. I'm a 2028 M.Tech grad (VIT), applying now. Built a Rust vector DB with an AVX2 SIMD kernel (4036ms→72ms queries). Know anyone on their team or any details on the role? github.com/charanvadhyar - Sai
 ```
 
-### RagaAI · SDE/AI Intern  (fit 8/10)
-- Post: https://x.com/Rohit_Pandey141/status/2125093282686591358 by @Rohit_Pandey141
-- Why: 6-month SDE/AI internship in India at an AI startup, with a direct email to apply.
-- Contact: hitesh.hinduja@raga.ai
-- ✉️ Saved as a Gmail draft (review and send yourself)
+### Isomorph AI · Software Engineering Intern  (fit 8/10)
+- Post: https://x.com/JesseisCooking/status/2125280901731086445 by @JesseisCooking, posted 24 Nov, 23:00 IST
+- Why: Same Isomorph AI SWE internship, good fit.
+- Contact: link · Apply: https://www.linkedin.com/jobs/view/4494332025/
 
-**Email subject:** SDE/AI Intern application: Sai Charan, M.Tech AI/ML
+**Email subject:** Your Isomorph AI SWE intern post, 2028 grad applying
 
 ```
-Hi Hitesh,
+Hi Devesh,
 
-I saw the RagaAI SDE/AI intern opening (6 months, Bengaluru) shared on X, and I'd like to apply. My resume is attached.
+I saw your post about the Isomorph AI Software Engineering Intern role for the 2027–2029 batches. I'm an M.Tech CSE (AI & ML) student at VIT Vellore graduating in 2028, and I'm applying through the LinkedIn link.
 
-Two things that seem most relevant:
+A bit about me: I spent 2025 as a software developer at Atmalogic. I built the manufacturing, HRM, CRM and billing modules of a headless ERP, which carried over as an asset when the client was acquired. On the side, I built ColVec, a ColBERT-style vector DB in Rust. A hand-written AVX2 kernel cut its query latency from 4036ms to 72ms.
 
-- At Atmalogic I spent 2025 building modules of a headless ERP (manufacturing flow, HRM, CRM, billing, POS). The client was later acquired, and the ERP carried over as an asset.
-- On the AI side, I built OpenResearch, a 7-agent LangGraph system that goes from a problem and dataset to EDA, baselines, an eval report and a paper draft. I'm also doing research on evaluating VLMs (Qwen2.5-VL, LLaVA-Med) for detecting disease from video.
-
-I'm doing an M.Tech in AI & ML at VIT. Could we have a quick chat about fit and timing?
+You share a lot of these roles, so I wanted to ask: do you know anyone at Isomorph AI I could send a short note to? Or is the apply link the best route?
 
 GitHub: github.com/charanvadhyar
 LinkedIn: linkedin.com/in/saicharanvadhyar
@@ -93,274 +82,153 @@ Sai
 **DM:**
 
 ```
-Hey Rohit, thanks for sharing the RagaAI SDE/AI intern role. I'm emailing Hitesh my resume now. I built ERP modules at a startup in 2025 and a 7-agent LangGraph research tool. github.com/charanvadhyar
+Hey Devesh, saw your Isomorph AI SWE intern post. I'm a 2028 M.Tech grad (VIT) with a year of ERP/backend work at Atmalogic, and I built a Rust vector DB (4036→72ms queries). Applying via the link. Know anyone there I could reach out to? github.com/charanvadhyar
 ```
 
-### ContexaAI · AI/Growth Engineering Intern  (fit 8/10)
-- Post: https://x.com/akshay_nocode/status/2125084227008086224 by @akshay_nocode
-- Why: This duplicates the ContexaAI AI intern post; the email in it is cut off and missing.
-- Contact: link · Apply: https://docs.google.com/forms/d/e/1FAIpQLScDlLcM9FCfPkGUqCigtmOwiIUbQCjBRMq702UIqr_64phJ0w/viewform
+### QuickHyre AI · SDE Intern  (fit 8/10)
+- Post: https://x.com/VishalKumax4ekg/status/2125282866405966038 by @VishalKumax4ekg, posted 24 Nov, 23:08 IST
+- Why: SDE internship at an Indian AI startup with a PPO.
+- Contact: link · Apply: https://quickhyre.ai/jobs/1edfe93b-a547-4239-8f4e-54f77defdd86
 
-**Email subject:** AI/Growth Engineering Intern: LLM pipelines in Python
-
-```
-Hi Akshay,
-
-Saw your post about the AI/Growth Engineering Intern role at ContexaAI. Building web data pipelines and using LLMs to pull buying signals out of messy data is close to what I've been working on.
-
-Two relevant projects:
-- OpenResearch: a 7-agent LangGraph system that takes a problem and dataset end-to-end through EDA, baselines and an eval report. It's on PyPI (pip install autoresearch) and got 20K+ views on Reddit.
-- JanVaani: built in 48 hours with the Gemini API on GCP. It ingests voice, photo and text reports in any Indian language, dedups them across languages and ranks them across 341 districts.
-
-I'm applying through the form as well. The email line in your post got cut off, so if you're open to a quick chat, I'd appreciate it.
-
-GitHub: github.com/charanvadhyar
-LinkedIn: linkedin.com/in/saicharanvadhyar
-
-Sai
-```
-
-**DM:**
+**Email subject:** SDE Intern application: production ERP and Rust vector DB
 
 ```
-Hi Akshay, saw the AI/Growth intern post. I built a 7-agent LangGraph research pipeline (on PyPI, 20K+ Reddit views) and a Gemini-based multilingual data platform in 48h. Applying via the form. Open to a quick chat? github.com/charanvadhyar
-```
+Hi QuickHyre team,
 
-### Fencio · AI Security Researcher (Intern / Junior)  (fit 8/10)
-- Post: https://x.com/avkashk/status/2124727978739532259 by @avkashk
-- Why: Founder hiring an AI security research intern at an early-stage startup.
-- Contact: dm
+I saw the SDE Intern role (Bangalore, PPO track) shared by Vishal on X and wanted to reach out directly as well as apply through your jobs page.
 
-**Email subject:** AI Security Researcher intern: built multi-agent systems, keen to break them
+In 2025 I worked as a software developer at Atmalogic in Chennai. I built modules of a headless ERP for gold manufacturing, covering manufacturing flow, HRM, CRM, inventory, billing and POS. The ERP was carried over as an asset when the client was acquired.
 
-```
-Hi Avkash,
+On the side, I built ColVec, a ColBERT-style vector DB in Rust and Python. It uses IVF and product quantization for 12.4x compression. A hand-written AVX2 SIMD kernel cut query latency from 4036ms to 72ms.
 
-I saw your post that Fencio is hiring an AI Security Researcher who enjoys breaking agents rather than building them. I'd like to be considered for the intern role.
-
-I'm coming at this from the builder side. I built OpenResearch, a 7-agent LangGraph system that takes a problem and dataset through EDA, baselines and a paper draft (pip install autoresearch, 20K+ Reddit views). Wiring those agents together showed me how much they trust tool outputs and each other's messages. I haven't done formal security work yet, but that's where I'd want to start poking. I'm also an AI researcher at Algoverse, where I evaluate VLMs like Qwen2.5-VL and LLaVA-Med.
-
-Would you be open to a quick chat? If you'd rather I apply another way, just let me know how.
-
-GitHub: github.com/charanvadhyar
-LinkedIn: linkedin.com/in/saicharanvadhyar
-
-Sai
-```
-
-**DM:**
-
-```
-Hi Avkash, saw the Fencio AI Security Researcher post. I built a 7-agent LangGraph research agent (OpenResearch) and evaluate VLMs at Algoverse. Keen to switch to breaking agents. Open to a quick chat? github.com/charanvadhyar
-```
-
-### Mexo Technologies · AI Engineering Intern (+PPO)  (fit 7/10)
-- Post: https://x.com/uchiha_Rockrz/status/2125064850795888948 by @uchiha_Rockrz
-- Why: A paid AI engineering internship in India that fits the candidate's AI background.
-- Contact: link · Apply: https://docs.google.com/forms/d/e/1FAIpQLSfuEnhPU77RtDdqbD6dsPXTjKC_QUQ4mSRRDBOIRXCZJBv6fw/viewform
-
-**Email subject:** Mexo AI Engineering Intern: agents and retrieval work
-
-```
-Hi Deepu,
-
-Saw your post about the AI Engineering Intern role at Mexo Technologies. I'm applying through the form, and wanted to add some context.
-
-I'm an M.Tech CSE (AI & ML) student at VIT Vellore. Two projects that seem most relevant:
-
-- OpenResearch: a 7-agent LangGraph system that takes a problem and dataset through EDA, baselines, an eval report and a paper draft. It's on PyPI and got 20K+ views on Reddit.
-- ColVec: a ColBERT-style vector DB in Rust with IVF + product quantization. It gets 12.4x compression, and a hand-written AVX2 kernel cut query latency from 4036ms to 72ms.
-
-I also spent 2025 shipping production ERP modules at Atmalogic.
-
-Would you be open to a quick 15-minute chat, or is the form the best route?
-
-GitHub: github.com/charanvadhyar
-LinkedIn: linkedin.com/in/saicharanvadhyar
-
-Sai
-```
-
-**DM:**
-
-```
-Hi Deepu, saw the Mexo AI Engineering Intern post. I built a 7-agent LangGraph research agent (on PyPI) and a Rust vector DB (4036ms to 72ms queries). Applying via the form. Open to a quick chat? github.com/charanvadhyar
-```
-
-### Proofline · Software Engineering Intern  (fit 7/10)
-- Post: https://x.com/InclusivelyR/status/2125144097706934484 by @InclusivelyR
-- Why: Remote worldwide SWE internship on developer tools, a good technical fit.
-- Contact: link · Apply: https://inclusivelyremote.com/job/software-engineering-intern-developer-tools/
-
-**Email subject:** Proofline SWE intern: code I can explain and verify
-
-```
-Hi,
-
-I saw your post about Proofline's remote Software Engineering Intern role. The line about understanding your code and explaining how you checked it stood out, because that's how I try to build things.
-
-Two examples:
-- Trivikrama, my open-source PyPI library, runs 400M-parameter transformer encoders on microcontrollers with ~100 KB RAM. I verified it bit-exact and against Hugging Face float32 (0.99+ cosine).
-- In ColVec, a Rust vector DB, I wrote an AVX2 SIMD kernel that cut query latency from 4036ms to 72ms. I benchmarked it against Qdrant on BEIR.
-
-I'm an M.Tech (AI & ML) student at VIT and spent 2025 shipping ERP modules at Atmalogic.
-
-I'll apply through the link. Do you know if there's someone at Proofline I could also send a short note to?
-
-GitHub: github.com/charanvadhyar
-LinkedIn: linkedin.com/in/saicharanvadhyar
-
-Sai
-```
-
-**DM:**
-
-```
-Saw your Proofline SWE intern post. The 'explain how you checked it' line fits how I work: my PyPI lib Trivikrama is bit-exact verified vs HF float32. Applying via the link. Any chance you know a contact there? github.com/charanvadhyar
-```
-
-### Merkle Science · Software Engineer Intern - Backend  (fit 7/10)
-- Post: https://x.com/Fresherflow/status/2125068172143255917 by @Fresherflow
-- Why: Backend SWE internship at an Indian startup.
-- Contact: link · Apply: https://jobs.lever.co/merklescience/e663b69b-264a-4bd7-b04d-fb3c0a824a28
-
-**Email subject:** Backend intern application: Sai Charan (ERP backend, Rust vector DB)
-
-```
-Hi Merkle Science team,
-
-I saw the Software Engineer Intern (Backend) role in Bangalore that FresherFlow posted on X. I'm applying through Lever and wanted to send a short note too.
-
-I'm an M.Tech CSE (AI & ML) student at VIT Vellore. In 2025 I spent a year as a software developer at Atmalogic, building modules of a headless ERP for a gold manufacturer: manufacturing flow, HRM, CRM, inventory, billing and POS. On my own, I built ColVec, a late-interaction vector DB in Rust with Python bindings. A hand-written AVX2 kernel cut query latency from 4036ms to 72ms, and I benchmarked it against Qdrant on BEIR.
-
-Would you be open to a quick chat, or is Lever the best way in?
+I'm currently doing an M.Tech in AI/ML at VIT Vellore. Could we set up a quick chat, or is the jobs page the best route?
 
 GitHub: github.com/charanvadhyar
 LinkedIn: linkedin.com/in/saicharanvadhyar
 
 Thanks,
-Sai Charan
-```
-
-**DM:**
-
-```
-Hi, saw the Merkle Science backend intern post. I built ERP backend modules at Atmalogic for a year and wrote a Rust vector DB (query latency 4036ms to 72ms with SIMD). Applying on Lever. Happy to chat if useful: github.com/charanvadhyar - Sai Charan
-```
-
-### Rozgar · ML Engineer Intern  (fit 7/10)
-- Post: https://x.com/rozgarjobsdotin/status/2124195922519421290 by @rozgarjobsdotin
-- Why: Early-stage startup ML internship fine-tuning LLMs in Bengaluru, though the stipend is low.
-- Contact: link · Apply: https://rozgarjobs.in/careers/ml-intern
-
-**Email subject:** ML Engineer Intern at Rozgar: retrieval and LLM eval background
-
-```
-Hi,
-
-I saw your post about the ML Engineer Intern role, fine-tuning LLMs so Rozgar AI can match resumes to the right jobs. Two things I've worked on that seem close to this:
-
-- ColVec, a ColBERT-style late-interaction vector DB in Rust and Python. IVF plus product quantization gave 12.4x compression, and a hand-written AVX2 kernel cut query latency from 4036ms to 72ms. I benchmarked it against Qdrant on BEIR. Resume-to-job matching looks like the same kind of retrieval problem.
-- At Algoverse AI Research, I'm currently evaluating VLMs (Qwen2.5-VL, LLaVA-Med) for detecting neuromuscular diseases from video.
-
-I'm doing an M.Tech in AI/ML at VIT Vellore and work mostly in PyTorch. I'll apply through the careers link too. Would you be open to a quick chat about the role and onsite timing?
-
-GitHub: github.com/charanvadhyar
-LinkedIn: linkedin.com/in/saicharanvadhyar
-
 Sai
 ```
 
 **DM:**
 
 ```
-Hi! Saw the ML Engineer Intern post for Rozgar AI. I built ColVec, a ColBERT-style vector DB (4036ms→72ms queries, 12.4x compression, benchmarked on BEIR), and I evaluate VLMs at Algoverse. Applying via the link. Open to a quick chat? github.com/charanvadhyar
+Hey Vishal, saw your post on the QuickHyre AI SDE intern role. I've shipped production ERP modules and built a Rust vector DB (4s to 72ms queries). Do you know who's hiring there, or is the link the best route? github.com/charanvadhyar
 ```
 
-### Sidecar · Founding AI/Backend Engineer  (fit 6/10)
-- Post: https://x.com/vineeth_agi/status/2124474694514749888 by @vineeth_agi
-- Why: Founding AI and backend engineer roles at a startup, reposted by a curator with no clear apply path.
+### Isomorph AI · Software Engineering Intern  (fit 7/10)
+- Post: https://x.com/RemoteCDse/status/2125278495559573949 by @RemoteCDse, posted 24 Nov, 22:50 IST
+- Why: Isomorph AI SWE internship, but this post includes no link.
 - Contact: unknown
 
-**Email subject:** Sidecar AI/backend roles: who should I contact?
+**Email subject:** Isomorph AI SWE intern post: where to apply?
 
 ```
-Hi Vineeth,
+Hi,
 
-I saw your post about Sidecar hiring for 9 roles, including Founding AI Engineer and Founding Backend Engineer. You said "let me know," so I'm reaching out.
+I saw your post about the Software Engineering Intern role at Isomorph AI (Bengaluru, hybrid). It didn't include an apply link, so I wanted to ask where to send an application.
 
-I'm an M.Tech CSE (AI & ML) student at VIT Vellore looking for an internship, ideally on Sidecar's AI or backend side. Two things that seem relevant:
-- OpenResearch: a 7-agent LangGraph system that takes a problem and dataset through EDA, baselines and an eval report to a paper draft (pip install autoresearch, 20K+ Reddit views).
-- ColVec: a late-interaction vector DB in Rust and Python. A hand-written AVX2 kernel cut query latency from 4036ms to 72ms.
+The AI coding agents part is what caught my eye. I built OpenResearch, a 7-agent LangGraph system in Python. It takes a problem and a dataset and produces EDA, baselines, an eval report and a paper draft. It's pip-installable and got 20K+ views on Reddit. On the deployment side, I built JanVaani, a multilingual civic reporting platform on GCP (Cloud Run, Firestore), in 48 hours. I also spent 2025 shipping ERP modules as a developer at Atmalogic.
 
-I also spent 2025 building backend ERP modules at Atmalogic.
-
-Could you point me to the right person at Sidecar, or tell me how to apply?
+Could you share the application link or a contact at Isomorph AI?
 
 GitHub: github.com/charanvadhyar
 LinkedIn: linkedin.com/in/saicharanvadhyar
 
+Thanks,
 Sai
 ```
 
 **DM:**
 
 ```
-Hi Vineeth, saw your Sidecar post. I'm an M.Tech AI/ML student looking for an intern spot on the AI/backend side. I built a 7-agent LangGraph research agent and a Rust vector DB (4036ms→72ms queries). Who should I contact? github.com/charanvadhyar
+Hi! I saw your Isomorph AI SWE intern post, but there's no apply link. Where can I apply? I built OpenResearch, a 7-agent LangGraph research agent in Python (20K+ Reddit views), and have shipped apps on GCP. github.com/charanvadhyar
 ```
 
-### Axixel · Software Engineering Intern (+PPO)  (fit 6/10)
-- Post: https://x.com/uchiha_Rockrz/status/2125065441227973105 by @uchiha_Rockrz
-- Why: A paid SWE internship in India, though it is a third-party repost.
-- Contact: link · Apply: https://docs.google.com/forms/d/e/1FAIpQLScS4P7zUsQ0IF6OI7m5JZfqJYu_hat4zcRco-5GOAzReEmtjA/viewform
+### Rockridge · AI Operations Intern  (fit 7/10)
+- Post: https://x.com/msbr_dev/status/2125317813497950702 by @msbr_dev, posted 25 Nov, 01:27 IST
+- Why: Remote paid internship at a startup building AI agents, though ops-leaning.
+- Contact: dm
 
-**Email subject:** Axixel SWE intern role: applying via your form
+**Email subject:** Interested in Rockridge's AI Operations Intern role
 
 ```
-Hi Deepu,
+Hi Mir,
 
-I saw your post that Axixel is hiring Software Engineering Interns (+PPO) in Bangalore. I'm filling out the form, but wanted to reach out directly too.
+I saw your post about Rockridge hiring its first AI Operations Intern, and I'd like to be considered.
 
-I'm an M.Tech CSE (AI & ML) student at VIT Vellore. Before that, I spent a year as a software developer at Atmalogic. There I built manufacturing, HRM, CRM, inventory, billing and POS modules for a headless ERP, which was carried over as an asset when the client was acquired. On the side, I built ColVec, a Rust vector DB where a hand-written AVX2 kernel cut query latency from 4036ms to 72ms.
+The role involves building AI agents and handling real customer problems, which matches two things I've done. I built OpenResearch, an open-source 7-agent system in LangGraph. It takes a problem and dataset through EDA, baselines, an eval report and a paper draft (pip install autoresearch, 20K+ Reddit views). Before that, I spent a year at Atmalogic building ERP modules for a gold manufacturing client, covering manufacturing flow, HRM, CRM, billing and POS. That work got me used to turning messy customer requirements into software people actually use.
 
-Are you on the Axixel team, or do you know who reviews applications? If so, I'd appreciate a quick pointer or a short chat.
+I'm based in India and open to remote. Could you share how to apply, or connect me with the Rockridge team?
 
 GitHub: github.com/charanvadhyar
 LinkedIn: linkedin.com/in/saicharanvadhyar
 
+Thanks,
 Sai
 ```
 
 **DM:**
 
 ```
-Hi Deepu, saw your Axixel SWE intern post and I'm applying via the form. I spent a year building ERP modules at Atmalogic and wrote a Rust vector DB (4036ms→72ms queries). Are you on the team, or do you know who reviews apps? github.com/charanvadhyar
+Hi Mir, I'm interested in the Rockridge AI Ops intern role. I built OpenResearch, a 7-agent LangGraph system (20K+ Reddit views), and spent a year building ERP modules for a real client. I'm remote from India. How do I apply? github.com/charanvadhyar
 ```
 
-### Coditude · AI Engineering Intern  (fit 6/10)
-- Post: https://x.com/devutyapp/status/2124489290281615542 by @devutyapp
-- Why: AI engineering internship in India at a services company.
-- Contact: link · Apply: https://devuty.com/internships/internship-ai-engineering-intern-coditude-pune
+### Roundz AI · AI Intern  (fit 7/10)
+- Post: https://x.com/PratyushMilwzi/status/2125221059310014904 by @PratyushMilwzi, posted 24 Nov, 19:02 IST
+- Why: AI internship at a startup, though details are sparse.
+- Contact: link · Apply: https://lnkd.in/dkRzVnvc
 
-**Email subject:** AI Engineering Intern at Coditude: agents and client work
+**Email subject:** Applying for the Roundz AI intern role you shared
 
 ```
-Hi Coditude team,
+Hi Pratyush,
 
-I saw Devuty's post about your 8-month AI Engineering internship in Pune. The focus on live client projects is what caught my attention.
+I saw your post that Roundz AI is hiring an AI intern. I'm applying through the link and wanted to reach out directly too.
 
-Two things that seem relevant. I built OpenResearch, a 7-agent LangGraph system that takes a problem and a dataset through EDA, baselines, an eval report and a paper draft (pip install autoresearch, 20K+ Reddit views). Before that, I spent 2025 at Atmalogic building modules of a headless ERP for a gold-manufacturing client: manufacturing flow, HRM, CRM, billing and POS. The ERP was carried over as an asset when the client was acquired.
+I'm an M.Tech (AI & ML) student at VIT Vellore. Two things that seem relevant:
 
-I'm currently doing my M.Tech at VIT Vellore. Could we have a quick chat about whether the internship can work around that? Either way, I'm happy to apply through the Devuty link.
+- At Algoverse AI Research, I'm using multimodal LLMs to detect neuromuscular diseases from video. I'm evaluating VLMs such as Qwen2.5-VL and LLaVA-Med.
+- I built OpenResearch, a 7-agent LangGraph system. It takes a problem and dataset and produces EDA, baselines, an eval report and a paper draft. It's pip-installable and got 20K+ views on Reddit.
+
+If you're on the team or know who's running the hiring, could you point me to the right person? I'd also like to know if there's anything beyond the form I should send.
 
 GitHub: github.com/charanvadhyar
 LinkedIn: linkedin.com/in/saicharanvadhyar
 
+Thanks,
 Sai
 ```
 
 **DM:**
 
 ```
-Hi! Saw the Coditude AI Engineering Intern post. I built OpenResearch, a 7-agent LangGraph ML research agent, and spent a year shipping ERP modules for a client. Is the Devuty link the best way to apply, or is there someone at Coditude to reach? github.com/charanvadhyar
+Hi Pratyush, saw your Roundz AI intern post. I'm an M.Tech AI/ML student at VIT doing VLM research at Algoverse, and I built OpenResearch (7-agent LangGraph research agent). Applied via the link. Mind pointing me to who's hiring? github.com/charanvadhyar
+```
+
+### Sarla Aviation · Applied AI Intern  (fit 6/10)
+- Post: https://x.com/RavindraDa26088/status/2125237150266609684 by @RavindraDa26088, posted 24 Nov, 20:06 IST
+- Why: Applied AI internship at a Bengaluru startup, but candidate's 2028 batch may not be eligible.
+- Contact: link · Apply: https://dastikop.blogspot.com/2026/11/sarla-aviation-applied-ai-internship-in.html
+
+**Email subject:** Sarla Aviation Applied AI intern: 2028 batch eligible?
+
+```
+Hi Ravindra,
+
+I saw your post about Sarla Aviation's Applied AI Intern role in Bengaluru. Before I apply through the blog link, I wanted to check one thing. I'm in the first year of an M.Tech in AI & ML at VIT Vellore and graduate in 2028, which is outside the listed batches. Do you know if they'd consider someone in my position, or who I could ask?
+
+On the applied AI side, I'm an AI researcher at Algoverse, where I evaluate VLMs like Qwen2.5-VL and LLaVA-Med for detecting neuromuscular diseases from video. I also built Trivikrama, an open-source library that runs 400M-parameter transformer encoders on microcontrollers with about 100 KB of RAM. It matches HF float32 at 0.99+ cosine similarity.
+
+GitHub: github.com/charanvadhyar
+LinkedIn: linkedin.com/in/saicharanvadhyar
+
+Thanks,
+Sai
+```
+
+**DM:**
+
+```
+Hi Ravindra, saw your Sarla Aviation Applied AI intern post. I'm an M.Tech AI/ML student (VIT, 2028 batch) doing VLM research at Algoverse. Any idea if they'd consider a 2028 grad? github.com/charanvadhyar
 ```
