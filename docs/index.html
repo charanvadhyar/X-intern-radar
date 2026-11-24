@@ -192,8 +192,11 @@ function stateOf(it){ return status[keyOf(it)] || "new"; }
 function setState(it, s){ const k = keyOf(it); if(s === "new") delete status[k]; else status[k] = s; store.set("radar.status", status); render(); }
 
 const open = new Set();
+function ts(v){ return Date.parse(String(v||"").replace(" UTC","Z").replace(" ","T")) || 0; }
+function postedAt(it){ return ts(it.post?.created_at) || ts(it.found_at); }
+function exact(t){ return t ? new Date(t).toLocaleString(undefined,{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"}) : ""; }
 function ago(found){
-  const t = Date.parse(String(found||"").replace(" UTC","Z").replace(" ","T"));
+  const t = typeof found === "number" ? found : ts(found);
   if(!t) return "";
   const m = Math.max(0, Math.round((Date.now()-t)/60000));
   if(m < 60) return `${m} min ago`;
@@ -217,7 +220,7 @@ function render(){
   }
   list.sort((a,b) => sort === "fit"
     ? (b.verdict?.relevance||0) - (a.verdict?.relevance||0)
-    : String(b.found_at||"").localeCompare(String(a.found_at||"")));
+    : postedAt(b) - postedAt(a));
   const tabName = {new:"To review", applied:"Applied", skipped:"Skipped", all:"All opportunities"}[filter];
 
   $("#app").innerHTML = `
@@ -279,7 +282,7 @@ function card(it, i){
       </div>
       <div class="side">
         <div class="fit ${fit>=8?"hi":fit>=6?"mid":""}">Fit ${fit}/10</div>
-        <div class="ago">${esc(ago(it.found_at))}</div>
+        <div class="ago" title="Posted ${esc(exact(postedAt(it)))}">Posted ${esc(ago(postedAt(it)))}</div>
       </div>
       <span class="chev">›</span>
     </button>
@@ -290,6 +293,7 @@ function card(it, i){
         ${apply ? `<a class="chip" href="${esc(apply)}" target="_blank" rel="noopener">Apply link ↗</a>` : ""}
         ${contact ? `<span class="chip">${contact}</span>` : ""}
         <span class="chip">@${esc(p.author_username)}</span>
+        ${p.created_at ? `<span class="chip">Posted ${esc(exact(ts(p.created_at)))}</span>` : ""}
         ${it.gmail_draft ? `<span class="chip">In Gmail drafts</span>` : ""}
       </div>
       ${o.email_body ? `

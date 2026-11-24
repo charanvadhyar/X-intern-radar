@@ -56,6 +56,16 @@ def load_sample(path: str) -> list[Post]:
     return posts
 
 
+def fmt_time(iso: str) -> str:
+    """'2026-11-24T08:10:00.000Z' -> '24 Nov, 13:40 IST' (Sai is in India)."""
+    try:
+        from datetime import timedelta
+        t = datetime.fromisoformat(iso.replace("Z", "+00:00")) + timedelta(hours=5, minutes=30)
+        return t.strftime("%d %b, %H:%M IST")
+    except Exception:
+        return iso
+
+
 def render_digest(items: list[dict], run_at: str) -> str:
     lines = [f"## Run {run_at} — {len(items)} opportunit{'y' if len(items) == 1 else 'ies'}", ""]
     for it in items:
@@ -63,7 +73,8 @@ def render_digest(items: list[dict], run_at: str) -> str:
         title = " · ".join(x for x in [v.get("company"), v.get("role")] if x) or "Opportunity"
         lines += [
             f"### {title}  (fit {v['relevance']}/10)",
-            f"- Post: {p['link']} by @{p['author_username']}",
+            f"- Post: {p['link']} by @{p['author_username']}"
+            + (f", posted {fmt_time(p.get('created_at'))}" if p.get("created_at") else ""),
             f"- Why: {v['reason']}",
             f"- Contact: {v.get('contact_email') or v['contact_method']}"
             + (f" · Apply: {v['apply_link']}" if v.get("apply_link") else ""),
