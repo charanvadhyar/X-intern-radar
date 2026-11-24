@@ -43,20 +43,25 @@ jobs:
             python -m radar.main
           fi
 
-      - name: Save state and digests
-        if: ${{ inputs.sample != true }}
-        run: |
-          git config user.name "intern-radar-bot"
-          git config user.email "intern-radar-bot@users.noreply.github.com"
-          git add data/
-          git diff --cached --quiet || git commit -m "radar: scan $(date -u +%Y-%m-%dT%H:%MZ)"
-          git push
-
       - name: Notify (opens an issue, which GitHub emails you)
-        if: ${{ hashFiles('data/latest_digest.md') != '' }}
+        if: ${{ always() && hashFiles('data/latest_digest.md') != '' }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           COUNT=$(grep -c '^### ' data/latest_digest.md || true)
           PREFIX=""; [ "${{ inputs.sample }}" = "true" ] && PREFIX="[TEST, not real] "
           gh issue create --title "${PREFIX}🎯 ${COUNT} new opportunities ($(date -u +%b\ %d,\ %H:%M) UTC)" --body-file data/latest_digest.md
+
+      - name: Save state and digests
+        if: ${{ always() && inputs.sample != true }}
+        run: |
+          git config user.name "intern-radar-bot"
+          git config user.email "intern-radar-bot@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && exit 0
+          git commit -m "radar: scan $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --no-edit origin main && git push origin HEAD:main && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
