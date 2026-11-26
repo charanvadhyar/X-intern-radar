@@ -1,53 +1,22 @@
-## Run 2026-11-25 21:46 UTC — 5 opportunities
+## Run 2026-11-26 08:27 UTC — 1 opportunity
 
-### Gunatrix · AI/ML, Full Stack, Cloud Engineering Intern  (fit 8/10)
-- Post: https://x.com/Gunatrix/status/2125525926641295626 by @Gunatrix, posted 25 Nov, 15:14 IST
-- Why: Indian startup offering remote AI/ML and full-stack internships, a strong fit.
-- Contact: link · Apply: https://gunatrix.tech/careers
+### Rapid Rocket · Full Stack Intern  (fit 7/10)
+- Post: https://x.com/rahultejadev/status/2125785159538749471 by @rahultejadev, posted 26 Nov, 08:24 IST
+- Why: Technical internship at a small Indian startup with a path to full-time; it needs React and Express, which the candidate has.
+- Contact: unknown
 
-**Email subject:** AI/ML intern application from a VIT M.Tech student
-
-```
-Hi Gunatrix team,
-
-I saw your post about AI/ML, Full Stack and Platform/Cloud interns, and I'd like to apply for the AI/ML track (remote). I'm also happy to work on full stack.
-
-I'm doing an M.Tech in CSE (AI & ML) at VIT Vellore, and I'm an AI researcher at Algoverse. There I work on evaluating VLMs like Qwen2.5-VL for detecting disease from video. Before that, I spent a year at Atmalogic building ERP modules (manufacturing flow, HRM, CRM, billing, POS) for a gold manufacturer. On the side, I built ColVec, a Rust vector DB where a hand-written AVX2 kernel cut query latency from 4036ms to 72ms. I also built JanVaani, a multilingual civic reporting app on GCP, in 48 hours.
-
-I'll apply through gunatrix.tech/careers. Would you be open to a quick chat about the roles?
-
-GitHub: github.com/charanvadhyar
-LinkedIn: linkedin.com/in/saicharanvadhyar
-
-Thanks,
-Sai
-```
-
-**DM:**
+**Email subject:** Rapid Rocket Full Stack Intern and the 20ms line
 
 ```
-Hi! Saw you're hiring AI/ML and full stack interns. I'm an M.Tech AI/ML student at VIT and I evaluate VLMs at Algoverse. I spent a year building ERP modules at Atmalogic. Applying via your careers page. Open to a quick chat? github.com/charanvadhyar
-```
+Hi Rahul,
 
-### Bracket Bot · Intern - applied AI/agents (Factory OS)  (fit 7/10)
-- Post: https://x.com/sincethestudy/status/2125692204467511602 by @sincethestudy, posted 26 Nov, 02:14 IST
-- Why: Founder offering an applied AI/agents internship at a robotics startup, a strong technical fit.
-- Contact: dm
+I saw your post about the Full Stack Intern role at Rapid Rocket. The '20ms off' line stuck with me, because the project I'm proudest of is about shaving milliseconds. In ColVec, a Rust vector DB I built, I cut query latency from 4036ms to 72ms with a hand-written AVX2 kernel.
 
-**Email subject:** Intern for Recursive Factory Improvement OS at Bracket Bot
+On the full stack side, I worked as a software developer at Atmalogic in Chennai through 2025. I built modules of an ERP for a gold manufacturer, covering manufacturing flow, HRM, CRM, inventory, billing and POS. The ERP was carried over as an asset when the client was acquired.
 
-```
-Hi Brian,
+I work in React and JavaScript. My backend work has mostly been in FastAPI and Flask, so Express would be a short ramp for me.
 
-Saw your post about the intern role on Recursive Factory Improvement OS, and the line about models running more of your engineering and manufacturing than you expected caught my attention. I'd like to work on that.
-
-Two things that seem relevant:
-- I built OpenResearch, a 7-agent LangGraph system that takes a problem and dataset through EDA, baselines, an eval report and a paper draft. It's on pip and got 20K+ Reddit views.
-- I spent 2025 building manufacturing-flow, inventory and billing modules for a headless ERP used in gold manufacturing, so I've seen how factory processes get modeled in software.
-
-I'm currently doing an M.Tech in AI/ML at VIT and an AI research role on multimodal LLMs. I'm in India and open to remote.
-
-Could we do a quick chat, or is there a preferred way to apply?
+How should I apply? I'm also happy to do a quick call.
 
 GitHub: github.com/charanvadhyar
 LinkedIn: linkedin.com/in/saicharanvadhyar
@@ -58,91 +27,5 @@ Sai
 **DM:**
 
 ```
-Hi Brian, saw the Factory OS intern post. I built a 7-agent LangGraph research agent (OpenResearch) and spent 2025 building manufacturing ERP modules. M.Tech AI/ML student, open to remote. Could we chat? github.com/charanvadhyar - Sai
-```
-
-### MyBuki · Intern  (fit 6/10)
-- Post: https://x.com/SamakshDev/status/2125519303239946510 by @SamakshDev, posted 25 Nov, 14:47 IST
-- Why: Paid remote internship at a US startup that hires in India, though the role type is unclear.
-- Contact: link · Apply: https://twitter.com/SamakshDev/status/2116520449568055468
-
-**Email subject:** MyBuki internship: which area are the 3 roles in?
-
-```
-Hi Samaksh,
-
-Saw your update that MyBuki is now hiring 3 interns (₹40K/month, remote) and has extended the deadline. I'm applying through @proofzme. The post doesn't say what the interns will work on, so I wanted to ask: is it backend, AI/ML, or something else?
-
-A bit about me: in 2025 I was a software developer at Atmalogic. I built modules of a headless ERP covering manufacturing flow, HRM, CRM, billing and POS. The ERP was carried over as an asset when the client was acquired. On the side I built ColVec, a Rust vector DB where a hand-written AVX2 kernel cut query latency from 4036ms to 72ms. I'm now doing an M.Tech in AI & ML at VIT.
-
-If you know who at MyBuki reviews applications, I'd be grateful for a pointer.
-
-GitHub: github.com/charanvadhyar
-LinkedIn: linkedin.com/in/saicharanvadhyar
-
-Sai
-```
-
-**DM:**
-
-```
-Hi Samaksh, I'm applying for the MyBuki internship via Proofz. Do you know if the 3 roles are backend, AI/ML or general SWE? I built ERP modules at Atmalogic and a Rust vector DB (queries 4036ms→72ms). github.com/charanvadhyar
-```
-
-### Dyeus · Founding Engineer / Fullstack Dev  (fit 6/10)
-- Post: https://x.com/awaizz49/status/2125558686193979635 by @awaizz49, posted 25 Nov, 17:24 IST
-- Why: Early-stage startup hiring founding and full-stack engineers, with DMs open.
-- Contact: dm · Apply: https://twitter.com/mahanot_dikshit/status/2125194681734906304
-
-**Email subject:** Fullstack role at Dyeus: student dev with shipped ERP work
-
-```
-Hi Awais,
-
-Saw your post about the open roles at Dyeus. The fullstack and founding engineer ones caught my eye, and you asked people to DM with their work, so here's mine.
-
-In 2025 I was a software developer at Atmalogic, building modules of a headless ERP for a gold manufacturer: manufacturing flow, HRM, CRM, inventory, billing and POS. It went into production and was carried over as an asset when the client was acquired.
-
-On the side I build lower-level things. One is ColVec, a Rust vector DB where a hand-written AVX2 kernel cut query latency from 4036ms to 72ms.
-
-I'm currently doing an M.Tech at VIT, so a remote internship would fit best. Would you be open to a quick chat, or should I go through the apply link?
-
-GitHub: github.com/charanvadhyar
-LinkedIn: linkedin.com/in/saicharanvadhyar
-
-Sai
-```
-
-**DM:**
-
-```
-Hey Awais, saw the Dyeus hiring post. M.Tech student here. In 2025 I built ERP modules (CRM, billing, POS) at Atmalogic, and I wrote a Rust vector DB that cut queries from 4036ms to 72ms. Open to a fullstack intern? github.com/charanvadhyar
-```
-
-### MEI · Research Intern - AI Systems  (fit 6/10)
-- Post: https://x.com/SidarthMayank/status/2125629796633968987 by @SidarthMayank, posted 25 Nov, 22:06 IST
-- Why: AI systems research internship in India, though it is shared through a job aggregator.
-- Contact: link · Apply: https://skillcareerhub.com/jobs/ebea94b3-e6f7-4ca7-8e6a-9846aa17bb2d
-
-**Email subject:** MEI Research Intern (AI Systems): know the team?
-
-```
-Hi Sidarth,
-
-I saw your post about MEI hiring a Research Intern for AI Systems in Chennai. I'm applying through the link. Since it's on a job aggregator, I wanted to ask if you know anyone on the team I could reach directly.
-
-A bit about me: I'm doing an M.Tech in AI & ML at VIT Vellore, and most of my work is where ML meets systems. I built Trivikrama, an open-source library that runs 400M-parameter transformer encoders on microcontrollers with about 100 KB of RAM. It streams int8/int4 weights from an SD card and gets 0.99+ cosine similarity vs HF float32. I also built ColVec, a ColBERT-style vector DB in Rust, where a hand-written AVX2 kernel cut query latency from 4036ms to 72ms.
-
-If you can point me to the right person, I'd really appreciate it.
-
-GitHub: github.com/charanvadhyar
-LinkedIn: linkedin.com/in/saicharanvadhyar
-
-Sai
-```
-
-**DM:**
-
-```
-Hi Sidarth, saw your post on MEI's Research Intern (AI Systems) role. I build ML systems stuff, like running 400M-param transformers on microcontrollers in ~100KB RAM. Know anyone on the team I could reach directly? github.com/charanvadhyar - Sai
+Hi Rahul, saw the Rapid Rocket Full Stack Intern post. I spent 2025 building ERP modules (inventory, billing, POS) at Atmalogic, I work in React, and I once cut a query from 4036ms to 72ms, so the 20ms line landed. How do I apply? github.com/charanvadhyar
 ```
