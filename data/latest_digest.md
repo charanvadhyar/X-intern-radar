@@ -1,46 +1,22 @@
-## Run 2026-11-27 21:23 UTC — 3 opportunities
+## Run 2026-11-28 07:55 UTC — 1 opportunity
 
-### Founding Engineer / Technical Lead  (fit 7/10)
-- Post: https://x.com/Karthikeyafyi/status/2126304126560870431 by @Karthikeyafyi, posted 27 Nov, 18:46 IST
-- Why: A founder is directly hiring for an early-stage AI assistant, which matches the candidate's agent work.
-- Contact: link · Apply: https://forms.gle/xXwMXy4sKiZhUziSA
+### FamPay · Backend Engineering Intern  (fit 7/10)
+- Post: https://x.com/Fresherflow/status/2126551663162835021 by @Fresherflow, posted 28 Nov, 11:10 IST
+- Why: Backend internship at a VC-backed Indian startup, a good fit for this candidate.
+- Contact: link · Apply: https://jobs.lever.co/fampay/cf014ef0-218a-4041-a238-ff91c7b9a5bc?lever-source%5B%5D=careers.peakxv.com
 
-**Email subject:** Agent builder re: your founding engineer post
-
-```
-Hi Karthikeya,
-
-Saw your post about hiring a founding engineer for an AI assistant that gets things done instead of just chatting. That's the kind of thing I've been building.
-
-I made OpenResearch, a 7-agent LangGraph system that takes a problem and a dataset through EDA, baselines, an eval report and a paper draft on its own. It's pip-installable and got 20K+ views on Reddit. Before that, I spent 2025 at Atmalogic building ERP modules (manufacturing, HRM, CRM, billing, POS). The client kept the ERP as an asset when it was acquired.
-
-To be upfront: I'm an M.Tech AI/ML student at VIT and haven't led a team yet. I'd still like to join as an early engineer or intern and build. I'll fill out the form. Would you be open to a 15-minute call?
-
-GitHub: github.com/charanvadhyar
-LinkedIn: linkedin.com/in/saicharanvadhyar
-
-Sai
-```
-
-**DM:**
+**Email subject:** Backend Engineering Intern: ERP billing and Rust experience
 
 ```
-Hey Karthikeya, saw your founding engineer post. I built OpenResearch, a 7-agent LangGraph system that runs ML research end to end (20K+ Reddit views). I'm an M.Tech student, keen to build early. Filling the form. Open to a quick chat? github.com/charanvadhyar
-```
+Hi FamPay team,
 
-### Curavolv · Software Dev & AI Engineering Intern  (fit 6/10)
-- Post: https://x.com/Aditya_Chawla20/status/2126252521828372941 by @Aditya_Chawla20, posted 27 Nov, 15:21 IST
-- Why: The remote AI internship at a small company fits, but apply links are only in replies.
-- Contact: unknown
+I saw the Backend Engineering Intern (Bengaluru) opening shared by FresherFlow on X. I'm applying through Lever and wanted to send a short note too.
 
-**Email subject:** Apply link for the Curavolv SWE & AI internship?
+In 2025 I worked as a software developer at Atmalogic. I built modules of a headless ERP for a gold manufacturer, covering manufacturing flow, HRM and CRM, plus inventory, billing and POS. The ERP was carried over as an asset when the client was acquired.
 
-```
-Hi Aditya,
+On the side I built ColVec, a vector database in Rust and Python. A hand-written AVX2 SIMD kernel cut its query latency from 4036ms to 72ms. Day to day I mostly work in Python, FastAPI and PostgreSQL. I'm currently doing my M.Tech in CSE at VIT Vellore.
 
-Saw your post today about the Curavolv Software Dev & AI Engineering internship (remote, freshers eligible). I'd like to apply. Could you share the apply link, or the right person at Curavolv to contact?
-
-A bit about me: I'm an M.Tech CSE (AI & ML) student at VIT Vellore. In 2025 I worked as a software developer at Atmalogic, building ERP modules (manufacturing flow, HRM, CRM, billing, POS). That ERP carried over as an asset when the client was acquired. On the AI side, I built OpenResearch, a 7-agent LangGraph system that takes a problem and dataset through EDA, baselines, an eval report and a paper draft. It got 20K+ views on Reddit.
+Would you be open to a 15-minute chat about the role?
 
 GitHub: github.com/charanvadhyar
 LinkedIn: linkedin.com/in/saicharanvadhyar
@@ -52,37 +28,5 @@ Sai
 **DM:**
 
 ```
-Hey Aditya, saw your post on the Curavolv SWE & AI intern role. Could you share the apply link? I'm an M.Tech AI/ML student with a year of SWE at Atmalogic, and I built a 7-agent LangGraph research agent. github.com/charanvadhyar Thanks! – Sai
-```
-
-### Fam · Backend Engineering Intern  (fit 6/10)
-- Post: https://x.com/foraiuse85334/status/2126246651874697246 by @foraiuse85334, posted 27 Nov, 14:58 IST
-- Why: This Indian startup backend internship accepts 2028 graduates, which matches the candidate.
-- Contact: link · Apply: https://www.linkedin.com/jobs/view/4495266686/
-
-**Email subject:** Backend Engineering Intern application, 2028 batch, VIT Vellore
-
-```
-Hi Fam team,
-
-I saw your Backend Engineering Intern role (2027-2029 batches) shared on X and wanted to send a short note alongside my application. I'm an M.Tech CSE student at VIT Vellore, graduating in 2028.
-
-Two things that seem most relevant:
-
-- At Atmalogic in Chennai (Jan-Dec 2025), I built backend modules for a headless ERP covering inventory, billing, POS, HRM and CRM. The client was later acquired, and the ERP carried over as an asset.
-- I built ColVec, a vector database in Rust and Python. A hand-written AVX2 kernel brought query latency from 4036ms down to 72ms, with 12.4x compression.
-
-I work mostly in Python, FastAPI and PostgreSQL, and I'm comfortable with Rust and C. Would you be open to a quick chat, or could you point me to the right person to follow up with?
-
-GitHub: github.com/charanvadhyar
-LinkedIn: linkedin.com/in/saicharanvadhyar
-
-Thanks,
-Sai
-```
-
-**DM:**
-
-```
-Thanks for sharing the Fam backend intern role! I'm a 2028 M.Tech grad, built ERP backends at Atmalogic, and I'm applying via the link. If you happen to know anyone on Fam's team, a pointer would help a lot. No worries if not. github.com/charanvadhyar
+Hi! Saw FamPay's Backend Engineering Intern opening. I built ERP billing/inventory/POS modules at Atmalogic and a Rust vector DB (queries 4036ms→72ms). Applying on Lever. Open to a quick chat? github.com/charanvadhyar
 ```
